@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+<head>
+<title>DriveTok</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+<link href="bootstrap.min.css" rel="stylesheet">
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> -->
+<link href="opensans.css" rel="stylesheet">
+<link rel="icon" href="images/logo3.png">
+<link href="style.css" rel="stylesheet">
+<style>
+  .container_2{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+</style>
+
+<style>
+.paperthumb {
+  float:left; width: 120px; margin: 3px 10px 7px 0;
+}
+.paperdesc {
+  clear: both;
+}
+</style>
+</head>
+
+<body class="nd-docs">
+<div class="nd-pageheader">
+ <div class="container">
+ <p class="lead" style="font-size:30px">
+    <b><a href="https://arxiv.org/abs/2507.02863">DriveTok: 3D Driving Scene Tokenization for Unified Multi-View Reconstruction and Understanding </a></b>
+  <address style="font-size: 110%;">
+    <nobr><b>Dong Zhuo</b>,</nobr>
+    <nobr><a href="https://wzzheng.net/"><b>Wenzhao Zheng</b></a>,</nobr>
+    <nobr><b>Sicheng Zuo</b>,</nobr>
+    <nobr><b>Siming Yan</b>,</nobr>
+    <nobr><b>Lu Hou</b>,</nobr>
+    <nobr><a href="https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en"><b>Jie Zhou</b></a>,</nobr>
+    <nobr><a href="http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/"><b>Jiwen Lu</b></a>
+  <br>
+      <nobr>Tsinghua University</nobr> 
+      <div>
+      </div>
+      <nobr>Yinwang Intelligent Technology Co. Ltd.</nobr>
+  </address>
+  <address style="font-size: 120%;">
+	 <!-- <br> -->
+  [<a href="https://arxiv.org/abs/2507.02863"><b>Paper (Arxiv)</b></a>]&nbsp;&nbsp;&nbsp;&nbsp;
+  <!-- [<a href="https://www.youtube.com/">Video(Youtube)</a>]&nbsp;&nbsp;&nbsp;&nbsp; -->
+  [<a href="https://github.com/paryi555/DriveTok"><b>Code (GitHub)</b></a>]&nbsp;&nbsp;&nbsp;&nbsp;
+  <!-- [<a href="https://zhuanlan.zhihu.com">Post(Zhihu)</a>] -->
+  </address>
+<!--   <small>† Project Leader. ‡Corresponding author.</small> -->
+  <!-- <small>*Equal contributions. <sup>†</sup>Project Leader.</small> -->
+ </div>
+ </p>
+ </div>
+</div> <!-- end nd-pageheader -->
+
+<div class="container">
+
+
+<!-- <p align="center">
+  <video width="90%" controls>
+    <source src="vid/final_demo.mp4" type="video/mp4">
+  </video>
+</p> -->
+
+<p align="center">
+    <img src="assets\teaser_01.png" width="90%">
+</p>
+<p><b>Overview of our contributions.</b> 
+DriveTok, an efficient 3D driving scene tokenizer for unified multi-view reconstruction and 
+understanding, transforms surround-view images into unified scene tokens that jointly encode 
+textural, semantic, and geometric information, enabling high-quality reconstruction and scene 
+understanding for autonomous driving.
+</p>
+
+<style>
+  .flex-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+  }
+  .flex-container p {
+    margin-left: 20px;
+  }
+</style>
+
+<h2>Unified 3D Scene Tokenization for Multi-View Reconstruction and Understanding</h2><hr>
+<p align="center">
+     <img src="assets\module_01.png" width="90%">
+</p>
+
+
+<h2>Overall Framework of DriveTok</h2><hr>
+<p> 
+  We propose our DriveTok for multi-view scene reconstruction and understanding. Vision-only 
+  surround-view images are processed by a 3D scene encoder to produce unified scene tokens on 
+  a BEV grid, independent of camera layout and resolution. A spatial-aware multi-view decoder 
+  renders predictions in both image and occ spaces. Through joint multi-task training, our 
+  scene tokens encode rich textural, semantic, and geometric information.
+<p>
+
+<p align="center">
+     <img src="assets\overview_01.png" width="90%">
+</p>
+
+
+<h2>Results</h2><hr>
+
+<h4>Image Reconstruction</h4><hr>
+
+We evaluate the image reconstruction performance of DriveTok on NuScenes. Our method achieves 
+performance comparable to all baselines across all six cameras, demonstrating that DriveTok can 
+be adapted to multi-view inputs in autonomous driving.
+<p></p>
+
+<p align="center">
+  <img src="assets\reconstruction.png" width="90%">
+</p>
+
+
+<h4>Depth Estimation</h4><hr>
+
+We conduct evaluations of multi-view depth estimation on NuScenes dataset.
+DriveTok achieves the lowest AbsRel and the highest δ < 1.25 among all compared methods. 
+These results demonstrate that the unified scene tokens effectively capture
+both local geometry and global scene structure, forming a reliable geometric
+foundation for downstream perception tasks.
+
+<p></p>
+
+<p align="center">
+  <img src="assets\depth1.png" width="90%">
+</p>
+
+<p align="center">
+  <img src="assets\depth2.png" width="90%">
+</p>
+
+<h4>Occupancy Prediction</h4><hr>
+We evaluate our DriveTok by testing its capability on occupancy prediction task, 
+which directly measures how well the learned tokens capture geometric
+and semantic structure of the driving scene. The quantitative results show that our DriveTok 
+significantly outperforms existing methods under the same setting, highlighting its superior ability to learn rich spatial
+and semantic information from multi-view inputs.
+
+<p></p>
+
+<p align="center">
+  <img src="assets\occupancy.png" width="90%">
+</p>
+
+<h4>Visualizations</h4><hr>
+
+<p></p>
+
+<p align="center">
+  <img src="assets/demo.gif" width="90%">
+</p>
+
+<p align="center">
+  <img src="assets/vis1.png" width="90%">
+</p>
+
+<p align="center">
+  <img src="assets/vis2.png" width="90%">
+</p>
+
+
+
+<p>
+<div class="card">
+<h3 class="card-header">Bibtex</h3>
+<div class="card-block">
+<pre class="card-text clickselect">
+@article{streamVGGT,
+      title={Streaming 4D Visual Geometry Transformer}, 
+      author={Dong Zhuo and Wenzhao Zheng and Jiahe Guo and Yuqi Wu and Jie Zhou and Jiwen Lu},
+      journal={arXiv preprint arXiv:2507.},
+      year={2025}
+}
+</pre>
+</div>
+</div>
+</p>
+
+
+<p align="right">
+     <a href="https://hanlab.mit.edu/projects/anycost-gan/">Website Template</a>
+</p>
+
+</div>
+</div> <!-- row -->
+
+</div> <!-- container -->
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight * 50+ "px";
+      } 
+      content.style.height = "550%";
+    });
+  }
+</script>
+
+</body>
+</html>
+
+
