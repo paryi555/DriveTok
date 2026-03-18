@@ -2,7 +2,7 @@
 <h1>DriveTok: 3D Driving Scene Tokenization for Unified Multi-View Reconstruction and Understanding</h1>
 </div>
 
-### [Paper](https://arxiv.org/abs/2507.02863)  | [Project Page](https://wzzheng.net/) 
+### [Paper](https://arxiv.org/abs/2507.02863)  | [Project Page](https://paryi555.github.io/DriveTok/) 
 
 >DriveTok: 3D Driving Scene Tokenization for Unified Multi-View Reconstruction and Understanding
 
