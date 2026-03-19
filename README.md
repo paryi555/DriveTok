@@ -2,7 +2,7 @@
 <h1>DriveTok: 3D Driving Scene Tokenization for Unified Multi-View Reconstruction and Understanding</h1>
 </div>
 
-### [Paper](https://arxiv.org/abs/2507.02863)  | [Project Page](https://wzzheng.net/) 
+### [Paper]()  | [Project Page]() 
 
 >DriveTok: 3D Driving Scene Tokenization for Unified Multi-View Reconstruction and Understanding
 
@@ -25,12 +25,6 @@ We propose our DriveTok for multi-view scene reconstruction and understanding. V
 
 If you find this project helpful, please consider citing the following paper:
 ```
-@article{streamVGGT,
-      title={Streaming 4D Visual Geometry Transformer}, 
-      author={Dong Zhuo and Wenzhao Zheng and Jiahe Guo and Yuqi Wu and Jie Zhou and Jiwen Lu},
-      journal={arXiv preprint arXiv:2507.},
-      year={2025}
-}
 ```
 
 
