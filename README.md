@@ -6,7 +6,9 @@
 
 >DriveTok: 3D Driving Scene Tokenization for Unified Multi-View Reconstruction and Understanding
 
->Dong Zhuo, [Wenzhao Zheng](https://wzzheng.net/),  Sicheng Zuo, Siming Yan, Lu Hou, [Jie Zhou](https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1), [Jiwen Lu](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)
+>Dong Zhuo<sup>\*</sup>, [Wenzhao Zheng](https://wzzheng.net/)<sup>*</sup>$\dagger$,  Sicheng Zuo, Siming Yan, Lu Hou, [Jie Zhou](https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1), [Jiwen Lu](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)
+
+<sup>*</sup> Equal contribution. $\dagger$ Project leader.
 
 **DriveTok**, an efficient **3D driving scene tokenizer for unified multi-view reconstruction and understanding**, transforms surround-view images into unified scene tokens that jointly encode textural, semantic, and geometric information, enabling **high-quality reconstruction and scene understanding for autonomous driving**.
 
